@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-do list</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body class="index-body">
+        <nav class="topnav">
+            <div class="cornerbox">
+                <a href="/index.html" class="home">
+                    <span class="lg-screen">Camilla Jepsen</span>
+                    <span class="sm-screen">C J</span>
+                </a>
+            </div>
+            <div class="title">
+                <div class="menubox"><a href="/about.html"><span class="x1">// </span> About me </a></div>
+                <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
+                <div class="menubox"><a href="/interests.html"><span class="x1">// </span> Interests</a></div>
+                <div class="menubox"><a href="/results.html"><span class="x1">// </span> Results</a></div>
+            </div>
+        </nav>
+        <div class="main-container">
+
+            <!-- Side nav bar links -->
+            <nav class="sidenav">
+                <a href="charity.html" class="sidebox"><div>Charity site</div></a>                
+                <a href="todo.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: bold;"><div>To-do list</div></a>
+                <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
+                <a href="financetracker.html" class="sidebox"><div>Finance tracker</div></a>
+                <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
+                <a href="journal.html" class="sidebox"><div>Online Journal</div></a>
+            </nav>
+                       
+
+            <div class="main-content">
+                <div class="left-section">
+                    <div class="photo-slider">
+
+                        <!-- Full-width images -->
+                        <div class="slide-images fade">
+                            <img src="/images/todo2.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-images fade">
+                            <img src="/images/todo1.png" style="width:100%">
+                        </div>
+
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="/images/pause.png"></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="link-bar">
+                        <a href="https://github.com/camillajepsen/todolist" class="github" target="_blank">
+                            <img src="/images/github.png">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://camillajepsen.github.io/todolist/index.html" class="altlink" target="_blank">
+                            <img src="/images/web.png">
+                            <span>Online Site</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="project-desc">
+                        <h2>Task Management System</h2><br>
+                        This project was a great way for me to learn basic JavaScript while building a practical Task Management System. 
+                        It allows users to add, edit, delete, and mark tasks as completed.<br>
+                        The system is created with HTML, CSS, and JavaScript, featuring an interface where tasks can be managed easily. 
+                        <br><br>Users can add tasks with editable content, delete tasks, and mark them as completed using checkboxes, 
+                        which apply a line-through effect for completed tasks. 
+                        I used event listeners to handle interactions in real time, and there’s a feature to toggle between "Edit" and "Save" for editing tasks. 
+                        The website is hosted online, to practice doing this as well.
+                    </div>
+                    <div class="concepts">
+                        <div class="grid-header">
+                            <h4>Concepts</h4><br>
+                        </div>
+                        <div class="concepts-content-container">
+                            <div class="concepts-content-left">
+                                <ul>
+                                    <li>HTML and CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="concepts-content-right">
+                                <ul>
+                                    <li>Webhosting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/slideshow.js"></script>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>

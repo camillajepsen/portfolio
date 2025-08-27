@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Charity Info Site</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body class="index-body">
+        <nav class="topnav">
+            <div class="cornerbox">
+                <a href="/index.html" class="home">
+                    <span class="lg-screen">Camilla Jepsen</span>
+                    <span class="sm-screen">C J</span>
+                </a>
+            </div>
+            <div class="title">
+                <div class="menubox"><a href="/about.html"><span class="x1">// </span> About me </a></div>
+                <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
+                <div class="menubox"><a href="/interests.html"><span class="x1">// </span> Interests</a></div>
+                <div class="menubox"><a href="/results.html"><span class="x1">// </span> Results</a></div>
+            </div>
+        </nav>
+        <div class="main-container">
+
+            <!-- Side nav bar links -->
+            <nav class="sidenav">
+                <a href="charity.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); color: white; font-weight: bold;"><div>Charity site</div></a>
+                <a href="todo.html" class="sidebox"><div>To-do list</div></a>
+                <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
+                <a href="financetracker.html" class="sidebox"><div>Finance tracker</div></a>
+                <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
+                <a href="journal.html" class="sidebox"><div>Online Journal</div></a>
+            </nav>            
+            
+            <div class="main-content">
+                <div class="left-section">
+                    <div class="photo-slider">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="slide-images fade">
+                            <img src="/images/charity1.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-images fade">
+                            <img src="/images/charity2.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-images fade">
+                            <img src="/images/charity4.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-images fade">
+                            <img src="/images/charity6.png" style="width:100%">
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="/images/pause.png"></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="link-bar">
+
+                        <a href="https://github.com/camillajepsen/charityinfosite" class="github" target="_blank">
+                            <img src="/images/github.png">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://camillajepsen.github.io/charityinfosite/index.html" class="altlink" target="_blank">
+                            <img src="/images/web.png">
+                            <span>Online Site</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="project-desc">
+                        <h2>Charity Awareness Website</h2><br>
+                        This individual project is a static, awareness-focused website built to inspire and inform users about meaningful ways to contribute to high-impact charities. 
+                        It was inspired by my interest in charities and my desire to educate myself more about different ways to make an impact. <br><br>
+                        Developed using HTML, CSS, and JavaScript, the site educates visitors on different donation types, non-financial contributions, and how to evaluate trustworthy charities.<br><br>
+                        Features include a visually engaging layout with themed background sections, clear content navigation, and mobile-responsive design. 
+                        The project emphasizes user-friendly information flow, structured HTML semantics, and accessible styling. Hosted on GitHub Pages for public access and version-controlled using Git.
+                    </div>
+                    <div class="concepts">
+                        <div class="grid-header">
+                            <h4>Concepts</h4><br>
+                        </div>
+                        <div class="concepts-content-container">
+                            <div class="concepts-content-left">
+                                <ul>
+                                    <li>HTML and CSS</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="concepts-content-right">
+                                <ul>
+                                    <li>Database design</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/js/slideshow.js"></script>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
