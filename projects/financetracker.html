@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Finance tracker</title>
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance tracker</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-    <body class="index-body">
-        <nav class="topnav">
-            <div class="cornerbox">
-                <a href="/index.html" class="home">
-                    <span class="lg-screen">Camilla Jepsen</span>
-                    <span class="sm-screen">C J</span>
-                </a>
-            </div>
-            <div class="title">
-                <div class="menubox"><a href="/about.html"><span class="x1">// </span> About me </a></div>
-                <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
-                <div class="menubox"><a href="/interests.html"><span class="x1">// </span> Interests</a></div>
-                <div class="menubox"><a href="/results.html"><span class="x1">// </span> Results</a></div>
-            </div>
+<body class="index-body">
+    <nav class="topnav">
+        <div class="cornerbox">
+            <a href="../index.html" class="home">
+                <span class="lg-screen">Camilla Jepsen</span>
+                <span class="sm-screen">C J</span>
+            </a>
+        </div>
+        <div class="title">
+            <div class="menubox"><a href="../about.html"><span class="x1">// </span> About me </a></div>
+            <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
+            <div class="menubox"><a href="../interests.html"><span class="x1">// </span> Interests</a></div>
+            <div class="menubox"><a href="../results.html"><span class="x1">// </span> Results</a></div>
+        </div>
+    </nav>
+    <div class="main-container">
+
+        <!-- Side nav bar links -->
+        <nav class="sidenav">
+            <a href="charity.html" class="sidebox"><div>Charity site</div></a>
+            <a href="todo.html" class="sidebox"><div>To-do list</div></a>
+            <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
+            <a href="financetracker.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: bold;"><div>Finance tracker</div></a>
+            <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
+            <a href="journal.html" class="sidebox"><div>Online Journal</div></a>
         </nav>
-        <div class="main-container">
+                            
+        <div class="main-content">
+            <div class="left-section">
+                <div class="photo-slider">
 
-            <!-- Side nav bar links -->
-            <nav class="sidenav">
-                <a href="charity.html" class="sidebox"><div>Charity site</div></a>
-                <a href="todo.html" class="sidebox"><div>To-do list</div></a>
-                <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
-                <a href="financetracker.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: bold;"><div>Finance tracker</div></a>
-                <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
-                <a href="journal.html" class="sidebox"><div>Online Journal</div></a>
-            </nav>
-                                
-
-            <div class="main-content">
-                <div class="left-section">
-                    <div class="photo-slider">
-
-                        <!-- Full-width images-->
-                        <div class="slide-images fade">
-                            <img src="/images/financetracker1.png" style="width:100%">
-                        </div>
-
-                        <div class="slide-images fade">
-                            <img src="/images/financetracker2.png" style="width:100%">
-                        </div>
-
-                        <div class="slide-images fade">
-                            <img src="/images/financetracker3.png" style="width:100%">
-                        </div>
-
-                        <!-- The dots/circles -->
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="/images/pause.png"></button>
-                        </div>
+                    <!-- Full-width images-->
+                    <div class="slide-images fade">
+                        <img src="../images/financetracker1.png" style="width:100%">
                     </div>
-                    <div class="link-bar">
-                        <a href="https://github.com/camillajepsen/financetracker" class="github" target="_blank">
-                            <img src="/images/github.png">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="/images/classdiagram.png" class="altlink" target="_blank">
-                            <img src="/images/diagram.png">
-                            <span>Class Diagram</span>
-                        </a>
+
+                    <div class="slide-images fade">
+                        <img src="../images/financetracker2.png" style="width:100%">
+                    </div>
+
+                    <div class="slide-images fade">
+                        <img src="../images/financetracker3.png" style="width:100%">
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="../images/pause.png"></button>
                     </div>
                 </div>
-                <div class="right-section">
-                    <div class="project-desc">
-                        <h2>Finance Manager</h2><br>
-                        This project was done to refresh my Java skills while building a practical command-line system for managing personal finances.  
-                        It allows users to track their expenses and incomes, manage categories, and save financial data for future reference.<br>  
-                        The system is built with Java and uses CSV files to store and retrieve data, ensuring persistence between sessions.  
-                        <br><br>Users can add categories, log transactions with descriptions and dates, and view all financial records in a structured format.  
-                        I implemented a simple terminal-based menu for easy interaction, and the program automatically loads and saves data.  
-                        To handle missing files gracefully, the system checks for existing data files and creates them if needed.  
-                        This project helped me practice file handling, object-oriented programming, and structured data management in Java.  
+                <div class="link-bar">
+                    <a href="https://github.com/camillajepsen/financetracker" class="github" target="_blank">
+                        <img src="../images/github.png">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="../images/classdiagram.png" class="altlink" target="_blank">
+                        <img src="../images/diagram.png">
+                        <span>Class Diagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="project-desc">
+                    <h2>Finance Manager</h2><br>
+                    This project was done to refresh my Java skills while building a practical command-line system for managing personal finances.  
+                    It allows users to track their expenses and incomes, manage categories, and save financial data for future reference.<br>  
+                    The system is built with Java and uses CSV files to store and retrieve data, ensuring persistence between sessions.  
+                    <br><br>Users can add categories, log transactions with descriptions and dates, and view all financial records in a structured format.  
+                    I implemented a simple terminal-based menu for easy interaction, and the program automatically loads and saves data.  
+                    To handle missing files gracefully, the system checks for existing data files and creates them if needed.  
+                    This project helped me practice file handling, object-oriented programming, and structured data management in Java.  
+                </div>
+                
+                <div class="concepts">
+                    <div class="grid-header">
+                        <h4>Concepts</h4><br>
                     </div>
-                    
-                    <div class="concepts">
-                        <div class="grid-header">
-                            <h4>Concepts</h4><br>
+                    <div class="concepts-content-container">
+                        <div class="concepts-content-left">
+                            <ul>
+                                <li>Java</li>
+                                <li>Software Design</li>
+                            </ul>
                         </div>
-                        <div class="concepts-content-container">
-                            <div class="concepts-content-left">
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Software Design</li>
-                                </ul>
-                            </div>
-                            <div class="concepts-content-right">
-                                <ul>
-                                    <li>Class Diagramming</li>
-                                </ul>
-                            </div>
+                        <div class="concepts-content-right">
+                            <ul>
+                                <li>Class Diagramming</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="/js/slideshow.js"></script>
-    </body>
+    <script src="../js/slideshow.js"></script>
+</body>
 
-    <footer>
+<footer>
 
-    </footer>
+</footer>
 </html>

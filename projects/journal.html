@@ -1,115 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E-Commerce store</title>
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-    <body class="index-body">
-        <nav class="topnav">
-            <div class="cornerbox">
-                <a href="/index.html" class="home">
-                    <span class="lg-screen">Camilla Jepsen</span>
-                    <span class="sm-screen">C J</span>
-                </a>
-            </div>
-            <div class="title">
-                <div class="menubox"><a href="/about.html"><span class="x1">// </span> About me </a></div>
-                <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
-                <div class="menubox"><a href="/interests.html"><span class="x1">// </span> Interests</a></div>
-                <div class="menubox"><a href="/results.html"><span class="x1">// </span> Results</a></div>
-            </div>
+<body class="index-body">
+    <nav class="topnav">
+        <div class="cornerbox">
+            <a href="../index.html" class="home">
+                <span class="lg-screen">Camilla Jepsen</span>
+                <span class="sm-screen">C J</span>
+            </a>
+        </div>
+        <div class="title">
+            <div class="menubox"><a href="../about.html"><span class="x1">// </span> About me </a></div>
+            <div class="menubox"><a href="charity.html"><span class="x1">// </span> Projects</a></div>
+            <div class="menubox"><a href="../interests.html"><span class="x1">// </span> Interests</a></div>
+            <div class="menubox"><a href="../results.html"><span class="x1">// </span> Results</a></div>
+        </div>
+    </nav>
+    <div class="main-container">
+
+        <!-- Side nav bar links -->
+        <nav class="sidenav">
+            <a href="charity.html" class="sidebox"><div>Charity site</div></a>
+            <a href="todo.html" class="sidebox"><div>To-do list</div></a>
+            <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
+            <a href="financetracker.html" class="sidebox"><div>Finance tracker</div></a>
+            <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
+            <a href="journal.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: bold;"><div>Online Journal</div></a>
         </nav>
-        <div class="main-container">
+                   
+        <div class="main-content">
+            <div class="left-section">
+                <div class="photo-slider">
 
-            <!-- Side nav bar links -->
-            <nav class="sidenav">
-                <a href="charity.html" class="sidebox"><div>Charity site</div></a>
-                <a href="todo.html" class="sidebox"><div>To-do list</div></a>
-                <a href="bookshelf.html" class="sidebox"><div>Online bookshelf</div></a>
-                <a href="financetracker.html" class="sidebox"><div>Finance tracker</div></a>
-                <a href="realestate.html" class="sidebox"><div>Real Estate System</div></a>
-                <a href="journal.html" class="sidebox" style="background-color: #2a2828; border: 2px solid #333; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: bold;"><div>Online Journal</div></a>
-            </nav>
-                       
-
-
-            <div class="main-content">
-                <div class="left-section">
-                    <div class="photo-slider">
-
-                        <!-- Full-width images-->
-                        <div class="slide-images fade">
-                            <img src="/images/journal1.png" style="width:100%">
-                        </div>
-
-                        <div class="slide-images fade">
-                            <img src="/images/journal2.png" style="width:100%">
-                        </div>
-
-                        <div class="slide-images fade">
-                            <img src="/images/journal3.png" style="width:100%">
-                        </div>
-
-                        <!-- The dots/circles -->
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="/images/pause.png"></button>
-                        </div>
+                    <!-- Full-width images-->
+                    <div class="slide-images fade">
+                        <img src="../images/journal1.png" style="width:100%">
                     </div>
-                    <div class="link-bar">
-                        <a href="https://github.com/camillajepsen/journal_app" class="github" target="_blank">
-                            <img src="/images/github.png">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://journalapp-22ce6.web.app/journal" class="altlink" target="_blank">
-                            <img src="/images/web.png">
-                            <span>Online Site</span>
-                        </a>
+
+                    <div class="slide-images fade">
+                        <img src="../images/journal2.png" style="width:100%">
+                    </div>
+
+                    <div class="slide-images fade">
+                        <img src="../images/journal3.png" style="width:100%">
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <button id="pauseBtn" onclick="toggleSlideshow()"><img id="pauseBtnImg" src="../images/pause.png"></button>
                     </div>
                 </div>
-                <div class="right-section">
-                    <div class="project-desc">
-                        <h2>Journal & Mood Tracker</h2>
-                        <br>
-                        This project was created to learn about React while building a web application for journaling and mental health. It allows users to write daily journal entries, view past entries on a calendar, and keep track of their moods in an organized way.
-                        <br><br>
-                        The system is built with React for the frontend and Firebase Firestore for storing and retrieving data, ensuring persistence across sessions. It also uses React Router to navigate between the main screens: Journal, Calendar, and Insights.
-                        <br><br>
-                        My next feature to work on is AI-powered insights, which will analyze past entries and moods to provide personalized feedback and trends. I am excited to explore this to learn more about AI integration in applications.
+                <div class="link-bar">
+                    <a href="https://github.com/camillajepsen/journal_app" class="github" target="_blank">
+                        <img src="../images/github.png">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://journalapp-22ce6.web.app/journal" class="altlink" target="_blank">
+                        <img src="../images/web.png">
+                        <span>Online Site</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="project-desc">
+                    <h2>Journal & Mood Tracker</h2>
+                    <br>
+                    This project was created to learn about React while building a web application for journaling and mental health. It allows users to write daily journal entries, view past entries on a calendar, and keep track of their moods in an organized way.
+                    <br><br>
+                    The system is built with React for the frontend and Firebase Firestore for storing and retrieving data, ensuring persistence across sessions. It also uses React Router to navigate between the main screens: Journal, Calendar, and Insights.
+                    <br><br>
+                    My next feature to work on is AI-powered insights, which will analyze past entries and moods to provide personalized feedback and trends. I am excited to explore this to learn more about AI integration in applications.
+                </div>
+                
+                <div class="concepts">
+                    <div class="grid-header">
+                        <h4>Concepts</h4><br>
                     </div>
-                    
-                    <div class="concepts">
-                        <div class="grid-header">
-                            <h4>Concepts</h4><br>
+                    <div class="concepts-content-container">
+                        <div class="concepts-content-left">
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
                         </div>
-                        <div class="concepts-content-container">
-                            <div class="concepts-content-left">
-                                <ul>
-                                    <li>HTML & CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </div>
-                            <div class="concepts-content-right">
-                                <ul>
-                                    <li>React</li>
-                                    <li>Firebase</li>
-                                </ul>
-                            </div>
+                        <div class="concepts-content-right">
+                            <ul>
+                                <li>React</li>
+                                <li>Firebase</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="/js/slideshow.js"></script>
-    </body>
+    <script src="../js/slideshow.js"></script>
+</body>
 
-    <footer>
+<footer>
 
-    </footer>
+</footer>
 </html>
